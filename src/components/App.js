@@ -10,15 +10,15 @@ const App = () => {
       <div className="container">
         <nav>
           <ul>
-            <li><Link id="form-link" to="/">Section 1 - Basic Form</Link></li>
-            <li><Link id="form-ref-link" to="/ref">Section 2 - useRef</Link></li>
-            <li><Link id="form-state-link" to="/state">Section 3 - useState</Link></li>
+            <li><Link id="form-link" to="/form">Section 1 - Basic Form</Link></li>
+            <li><Link id="form-ref-link" to="/form-ref">Section 2 - useRef</Link></li>
+            <li><Link id="form-state-link" to="/form-state">Section 3 - useState</Link></li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<Form />} />
-          <Route path="/ref" element={<FormRef />} />
-          <Route path="/state" element={<FormState />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/form-ref" element={<FormRef />} />
+          <Route path="/form-state" element={<FormState />} />
         </Routes>
       </div>
     </BrowserRouter>
